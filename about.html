@@ -42,13 +42,41 @@
         <article class="scrolly">
           <h3>So what's the purpose of the site?</h3>
           <p>There's not much to tell! We're dedicated to delivering Scottish recipes, food, and cullture.</p>
-          <h3>Wait, so what does your site name mean?</h3>
+          <h3>Wait, then what does your site name mean?</h3>
           <p>Address to a haggis is a poem by Rabbie Burns, and we're named after it! Take a listen:</p>
           <iframe class="youtube-video" width="640" height="480" src="https://www.youtube.com/embed/b5f_yDLZBaA"></iframe>
           </p>
+          <!--Help Form-->
+          <section class="help-form">
+            <h3>I have a question you haven't answered!</h3>
+            <form>
+              <label for="name">What's your name?</label><br>
+              <input type="text" id="name" name="name"><br>
+
+              <label for="email">What is your email address?</label><br>
+              <input type="text" id="email" name="email"><br>
+
+              <p>What is your question about?<p>
+                <form>
+                  <input type="radio" id="history" name="what-question" value="history">
+                  <label for="history">Scottish History or Culture</label><br>
+                  <input type="radio" id="food" name="what-question" value="food">
+                  <label for="food">Scottish Food or Recipes</label><br>
+                  <input type="radio" id="the-site" name="what-question" value="the-site">
+                  <label for="the-site">The Site or Report Bug</label><br>
+                  <input type="radio" id="other" name="what-question" value="other">
+                  <label for="other">Other</label><br>
+                </form>
+
+              <label for="question">What is your question?</label><br>
+              <input type="text" id="question" name="question"><br>
+
+              <input type="submit" value="Submit">
+            </form>
+          </section>
 
         </article>
-        
+
         <aside>
           <!--Image Source: https://www.bbc.co.uk/programmes/articles/2XYTdkXwqSQM8z4TSsnZwRb/an-honest-sonsie-face-the-many-portraits-of-robert-burns-->
           <article class="gallery-image">

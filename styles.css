@@ -77,7 +77,7 @@ h2{
 }
 
 h3{
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
 p{
@@ -202,6 +202,14 @@ aside {
     .gallery { flex-wrap: wrap;}
     .gallery-image { flex-basis: 100%; }
   }
+
+/*Help form CSS*/
+.help-form{
+    background-color: rgba(123, 144, 165, 1);
+    margin: 1em;
+    padding: 1em;
+    font-size: 1.15em;
+}
 
 /*Recipe Page Custom CSS*/
 .method-list{
