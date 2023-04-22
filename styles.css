@@ -170,9 +170,14 @@ aside {
 }
 
 .gallery-image{
+    flex: 1;
     width: 100%;
     height: auto;
 }
+@media screen and (max-width: 1000px) {
+    .gallery { flex-wrap: wrap;}
+    .gallery-image { flex-basis: 100%; }
+  }
 
 /*Recipe Page Custom CSS*/
 .method-list{
