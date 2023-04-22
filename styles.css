@@ -220,6 +220,11 @@ aside {
     list-style-type: circle;
 }
 
+.image-head{
+    flex: 0.5;
+    margin: 0.1em;
+}
+
 /*Footer*/
 footer {
     display: flex;
