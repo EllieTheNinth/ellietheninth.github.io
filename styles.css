@@ -225,6 +225,36 @@ aside {
     margin: 0.1em;
 }
 
+/*Recipe Filter Page Handling*/
+/*Tutorial used: https://www.youtube.com/watch?v=DTOU_gbqfnM*/
+.scrolly input{
+    display: none;
+}
+
+.tag{
+    margin: 1.5rem 0rem;
+    padding: 5px 1.8rem;
+    border-radius: 50px;
+    background-color: rgba(123, 144, 165, 1);
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    border: 1px solid whitesmoke;
+    align-items:center;
+}
+
+.recipe-imgs{
+    visibility: hidden;
+    max-width: 100%;
+    max-height: auto;
+}
+
+#all:checked ~ .recipe-imgs{
+    visibility: visible;
+}
+
+
+
 /*Footer*/
 footer {
     display: flex;
