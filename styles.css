@@ -249,7 +249,6 @@ aside {
 }
 
 .recipe-imgs a{
-    visibility: hidden;
     max-width: 100%;
     max-height: auto;
     margin: auto;
@@ -262,8 +261,16 @@ aside {
     visibility: visible;
 }
 
-#sweet:checked ~ .sweet{
-    visibility: visible;
+#sweet:checked ~ .recipe-imgs > a:not([class = "sweet"]){
+    visibility: collapse;
+}
+
+#savory:checked ~ .recipe-imgs > a:not([class = "savory"]){
+    visibility: collapse;
+}
+
+#meal:checked ~ .recipe-imgs > a:not([class = "meal"]){
+    visibility: collapse;
 }
 
 
