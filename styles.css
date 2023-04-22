@@ -164,6 +164,16 @@ aside {
     article { flex-basis: 100%; }
   }
 
+/*Image Galleries*/
+.gallery{
+    display: flex;
+}
+
+.gallery-image{
+    width: 100%;
+    height: auto;
+}
+
 /*Recipe Page Custom CSS*/
 .method-list{
     list-style-type: decimal;
