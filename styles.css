@@ -24,7 +24,7 @@ body {
     background-attachment: scroll;
 
     /*If image unavailable*/
-    background-color: rgb(80, 79, 88);
+    background-color: rgba(123, 144, 165, 1);
 
     /*Standard font*/
     font-family: 'Alegreya Sans', sans-serif;
@@ -41,8 +41,8 @@ h1 {
     font-size: 4.5em;
     text-align: center;
     font-family: 'Homemade Apple';
-    color: white;
-    text-shadow: 2px 1px 5px black;
+    color: rgba(19, 25, 15, 1);
+    text-shadow: 2px 1px 5px rgba(123, 144, 165, 1);
     margin: 17vh auto;
 }
 
@@ -50,8 +50,8 @@ h2{
     /*Font for page titles*/
     font-family: 'Permanent Marker', serif;
     font-size: 4em;
-    color: white;
-    text-shadow: 2px 1px 5px black;
+    color: rgba(19, 25, 15, 1);
+    text-shadow: 2px 1px 5px rgba(123, 144, 165, 1);
 }
 
 h3{
@@ -69,25 +69,26 @@ p{
     overflow: hidden;
     margin: 0;
     height: 3.7em;
+    background-color: rgba(60, 82, 86, 1);
 }
 nav li {
     list-style: none;
     margin: 1em 0;
+    
 }
 
 nav li a:hover{
-    background-color: rgba(255, 255, 255, 0.75);
-    color:black;
+    background-color: whitesmoke;
+    color: black;
     text-shadow: none;
 }
 
 nav li a {
     flex: 1;
     text-decoration: none;
-    color: white;
     font-size: 1.3em;
     padding: 1em;
-    text-shadow: 2px 1px 5px black;
+    color: whitesmoke;
 }
 
 
@@ -113,8 +114,9 @@ nav li a {
 
 /*Welcome Title*/
 .welcome-text{
-    flex: 1;
+    flex: 3;
     justify-content: left;
+    margin: 1em;
 }
 
 /*Scroll Button*/
@@ -125,7 +127,8 @@ nav li a {
     background-color: transparent;
     text-decoration: none;
     justify-content: left;
-    text-align: right;
+    text-align: left;
+    margin: 1em;
 }
 
 /*Page content*/
@@ -197,3 +200,15 @@ footer {
     text-align: center;
     color: black;
 }
+
+
+/* COLOUR PALETTE
+Source: https://coolors.co/5c3011-2a150f-13190f-58633b-b28103-3c5256-7b90a5
+$seal-brown: rgba(92, 48, 17, 1);
+$licorice: rgba(42, 21, 15, 1);
+$eerie-black: rgba(19, 25, 15, 1);
+$dark-moss-green: rgba(88, 99, 59, 1);
+$dark-goldenrod: rgba(178, 129, 3, 1);
+$dark-slate-gray: rgba(60, 82, 86, 1);
+$slate-gray: rgba(123, 144, 165, 1);
+*/
