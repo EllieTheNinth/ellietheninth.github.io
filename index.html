@@ -34,7 +34,11 @@
     </div>
   </head>
 
-  <body>
+  <body onload="burns_is_typing()">
+    <div id="address" class="address-class" onclick="end_typing()">
+      <p class="address-text"></p>
+    </div>
+
     <div id="box2">
 
       <!--Page Content-->
@@ -48,6 +52,12 @@
             It'd be a crying shame if you burned one of our great recipes...
             <br><br>
           </p>
+          <h3>Wait, what does your site name mean?</h3>
+          <p>Address to a haggis is a poem by Rabbie Burns, and we're named after it! Take a listen:</p>
+          <iframe width="640" height="480" src="https://www.youtube.com/embed/b5f_yDLZBaA"></iframe>
+          </video>
+          <h3>Wondering where you are?</h3>
+          <a href="about.html">Learn more about the site!</a>
           <h3>Need a recommendation?</h3>
           <p>Here's some recipes that I love...</p>
           <section class="gallery">
@@ -76,6 +86,8 @@
               <p>Tiffin</p>
             </article>
           </section>
+          <h3>Want to learn about Scotland?</h3>
+          <a href="scotland.html">Take a look!</a>
         </article>
         <aside>
           <!--Image Source: https://freepngimg.com/png/73285-map-parliament-blank-scotland-vector-scottish-->
@@ -102,3 +114,33 @@
   </footer>
 
 </html>
+
+<!--Scripts-->
+<script>
+  var i = 0;
+  var poem = 'Ye Pow’rs wha mak mankind your care, \n'
+  + 'And dish them out their bill o’ fare, \n'
+  + 'Auld Scotland wants nae skinking ware \n'
+  + 'That jaups in luggies; \n'
+  + 'But, if ye wish her gratefu’ prayer...\n \n'
+  + 'Gie her a Haggis. \n'
+  + '...';
+  var x = document.getElementById("address");
+  var speed = 80;
+
+  function burns_is_typing() {
+    if (i < poem.length) {
+      x.innerHTML += poem.charAt(i);
+      i++;
+      setTimeout(burns_is_typing, speed);
+    }
+    else{
+      x.style.display = "none";
+    }
+  }
+  
+  function end_typing() {
+    x.style.display = "none";
+  }
+
+</script>
