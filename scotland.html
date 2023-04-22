@@ -40,14 +40,42 @@
       <!--Page Content-->
       <section class="content-flex">
         <article class="scrolly">
-          <h3>Looking for Scottish Recipes, History, and Culture?</h3>
-          <p>We've got you covered!
-            From coast to host, highland to island, loch to ham hock - alright that's a stretch - we're talking about all the fun bits of Scotland.
-            So grab a frying pan, get your history lesson in, and mind that egg timer!
-            <br><br>
-            It'd be a crying shame if you burned one of our great recipes...
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          </p>
+          <h3>Waiting for that egg timer to wind down?</h3>
+          <p>I'll keep you entertained!</p>
+          <h3>Let's find out where our recipes come from</h3>
+          <p>Recipes by location:</p>
+          <!--Image Source: http://www.scottishvisits.com/scotland_regions.html-->
+          <img src="scotland-map.jpg" usemap="#image-map" alt = "County map of Scotland">
+          <map name="image-map">
+            <area alt="Dundee and St Andrews" title="Dundee and St Andrews" href="dandsta.html" coords="480,500,70" shape="circle">
+            <area alt="Edinburgh" title="Edinburgh" href="edin.html" coords="460,600,70" shape="circle">
+            <area alt="Ayrshire" title="Ayrshire" href="ayr.html" coords="300,700,80" shape="circle">
+            <area alt="Highlands and Islands" title="Highlands and Islands" href="highandi.html" coords="250,200,250" shape="circle">
+          </map>
+
+          <h3>Articles</h3>
+          <p>Looking for a good read? Scroll no further!</p>
+          <input type="radio" id="all" name="article-type">
+          <input type="radio" id="history" name="article-type">
+          <input type="radio" id="culture" name="article-type">
+          <input type="radio" id="poems" name="article-type">
+
+          <label for="all" class="tag all">All Articles</label>
+          <label for="history" class="tag history">History</label>
+          <label for="culture" class="tag culture">Culture</label>
+          <label for="poems" class="tag poems">Poems</label>
+          
+          <div class="article-imgs">
+            <!--Image Source @VisitScotland Kenny Lam: https://www.visitscotland.com/places-to-go/st-andrews/things-to-do-->
+            <a class="culture" href="dandsta.html"><img src="recipe-imgs/dandsta.jpg"><p>Recipes from Dundee and St Andrews</p></a>
+            <!--Image Source @VisitScotland Kenny Lam: https://www.visitscotland.com/places-to-go/edinburgh/things-to-do-->
+            <a class="culture" href="edin.html"><img src="recipe-imgs/edin.jpg"><p>Recipes from Edinburgh</p></a>
+            <!--Image Source @VisitScotland: https://www.visitscotland.com/info/see-do/culzean-castle-country-park-p248671-->
+            <a class="culture" href="ayr.html"><img src="recipe-imgs/ayr.jpg"><p>Recipes from Burns Country</p></a>
+            <!--Image Source @VisitScotland: https://www.visitscotland.com/places-to-go/highlands-->
+            <a class="culture" href="highandi.html"><img src="recipe-imgs/highandi.jpg"><p>Recipes from the Highlands and Islands</p></a>
+          </div>
+
         </article>
         <aside>
           <!--Image Source: https://www.bbc.co.uk/programmes/articles/2XYTdkXwqSQM8z4TSsnZwRb/an-honest-sonsie-face-the-many-portraits-of-robert-burns-->
