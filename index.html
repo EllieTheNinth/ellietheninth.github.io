@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <div class="page1">
+    <div id="box1">
 
       <!--Links and Meta Tags-->
       <meta charset="UTF-8" />
@@ -27,20 +27,19 @@
       <!--Welcome-->
       <section class="welcome-flex">
         <h2 class="welcome-text">Passionate about Scotland...</h2>
-        <button class="scroller" Onclick="scrollIntoView()">
-          <img src="arrow.svg">
-        </button>
+        <a class="scroller" href="#box2"><h2>Get started</h2></a>
       </section>
+      
 
     </div>
   </head>
 
   <body>
-    <div class="page 2">
+    <div id="box2">
 
       <!--Page Content-->
       <section class="content-flex">
-        <article>
+        <article class="scrolly">
           <h3>Looking for Scottish Recipes, History, and Culture?</h3>
           <p>We've got you covered!
             From coast to host, highland to island, loch to ham hock - alright that's a stretch - we're talking about all the fun bits of Scotland.
@@ -73,14 +72,5 @@
       <a href="">Legal Stuff  |</a><a href="">  Privacy Policy  |</a><a href="">  Security</a>
     </section>
   </footer>
-
-
-  <!--SCRIPTS-->
-
-  <!--Scroll from welcome to content-->
-  <script>
-    const page = document.getElementById("page2");
-    page.scrollIntoView();
-  </script>
 
 </html>
