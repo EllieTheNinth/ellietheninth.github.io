@@ -276,7 +276,7 @@ aside {
 
 .article-imgs{
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .article-imgs a{
